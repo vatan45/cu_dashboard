@@ -154,17 +154,19 @@ const Dashboard = () => {
                   
                   <div className="bg-white p-5 rounded-xl shadow-md w-1/2">
                     <h3 className="font-bold mb-3 text-lg text-blue-900">Gender</h3>
-                    <ResponsiveContainer width="100%" height={180}>
+                    <ResponsiveContainer width="100%" height={200}>
                       <PieChart>
                         <Pie
                           data={genderData}
                           cx="50%"
                           cy="50%"
-                          outerRadius={75}
+                          outerRadius={70}
+                          innerRadius={40}
                           fill="#8884d8"
                           dataKey="value"
-                          startAngle={180}
-                          endAngle={0}
+                          startAngle={0}
+                          endAngle={180}
+                          paddingAngle={5}
                         >
                           {genderData.map((entry, index) => (
                             <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
