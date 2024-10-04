@@ -59,7 +59,7 @@ const Dashboard = () => {
     <div className="flex flex-col h-screen bg-gray-100">
       <Navbar />
       <div className="flex flex-1 overflow-hidden">
-        {/* Sidebar - icons only with larger icons */}
+      
         <div className="w-16 bg-white shadow-md overflow-y-auto">
           <nav>
             <ul className="space-y-4 py-4">
@@ -91,10 +91,10 @@ const Dashboard = () => {
           </nav>
         </div>
         
-        {/* Main content - adjusted padding and spacing */}
+       
         <div className="flex-1 p-6 overflow-y-auto">
           <div className="space-y-6">
-            {/* Top cards - increased spacing */}
+         
             <div className="flex justify-between space-x-6">
               {['Total Events', 'Total Members', 'Pending Approvals'].map((title, index) => (
                 <div key={index} className="bg-white p-4 rounded-xl shadow-md flex-1 border border-yellow-500">
@@ -104,9 +104,9 @@ const Dashboard = () => {
               ))}
             </div>
             
-            {/* Middle section - increased spacing */}
+          
             <div className="flex space-x-6">
-              {/* Event Approvals */}
+      
               <div className="bg-white p-5 rounded-xl shadow-md w-2/5">
                 <h3 className="font-bold mb-3 text-lg text-blue-900">Event Approvals</h3>
                 <div className="overflow-hidden h-36 relative">
@@ -126,7 +126,7 @@ const Dashboard = () => {
                 </div>
               </div>
               
-              {/* Urgent Tasks, Active Members, and Gender */}
+            
               <div className="space-y-6 w-3/5">
                 <div className="bg-gradient-to-b from-yellow-500 to-yellow-400 p-5 rounded-xl shadow-md">
                   <h3 className="font-bold text-white mb-3 text-lg">Urgent Tasks</h3>
@@ -186,7 +186,7 @@ const Dashboard = () => {
               </div>
             </div>
             
-            {/* Bottom section - Membership Approval */}
+         
             <div className="bg-white p-5 rounded-xl shadow-md">
               <h3 className="font-bold mb-3 text-lg text-blue-900">Membership Approval</h3>
               <table className="w-full">
@@ -205,14 +205,14 @@ const Dashboard = () => {
                     <td className="py-2">21BPD1111</td>
                     <td className="py-2">PENDING</td>
                   </tr>
-                  {/* Add more rows as needed */}
+               
                 </tbody>
               </table>
             </div>
           </div>
         </div>
         
-        {/* Calendar sidebar - reduced width */}
+       
         <div className="w-1/6 bg-white p-4 shadow-md flex flex-col overflow-y-auto">
           <div className="flex justify-between items-center mb-4">
             <h3 className="font-bold text-black">July 2024</h3>
